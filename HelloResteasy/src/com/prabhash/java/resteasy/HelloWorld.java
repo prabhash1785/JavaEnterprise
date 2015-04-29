@@ -12,7 +12,7 @@ public class HelloWorld {
 	@Produces({ MediaType.APPLICATION_JSON })
 	@Path("/hello")
 	public String sayHello() {
-		return "Hello Rest Easy!!";
+		return "Hello Rest Easy";
 	}
 
 }
