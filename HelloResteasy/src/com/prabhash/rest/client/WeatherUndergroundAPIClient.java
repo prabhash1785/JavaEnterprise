@@ -19,7 +19,7 @@ public class WeatherUndergroundAPIClient {
 		
 		Client client = ClientBuilder.newClient();
 		
-		WebTarget webTarget = client.target("http://api.wunderground.com/api").path("<your_api_key>/conditions/q/CA/San_Francisco.json");;
+		WebTarget webTarget = client.target("http://api.wunderground.com/api").path("<your_api_key>/conditions/q/CA/San_Francisco.json");
 		
 		String response = webTarget.request(MediaType.APPLICATION_JSON).get(String.class);
 		
